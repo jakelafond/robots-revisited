@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+  border: solid 1px rgb(205, 205, 205);
+  padding: 5px;
+  margin: 5px;
+  width: calc(20% - 30px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+p,
+h3,
+a {
+  width: 100%;
+  text-align: center;
+}
+h3 {
+  color: rgb(41, 90, 236);
+  font-weight: 700;
+}
+.nojob {
+  color: red;
+}
+/* USER PAGE */
+.userimg {
+  border: 1px solid #dbe4e4;
+  border-radius: 100px;
+  margin: 5px;
+}
+.username {
+  text-align: left;
+  color: black;
+  font-size: 3em;
+  font-weight: 400;
+}
+.userschool {
+  text-align: left;
+}
+.emailphone {
+  text-align: left;
+}
+.skillscol {
+  margin-top: -1.75em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.userskills {
+  border: 0;
+  margin: 0;
+  width: 5em;
+  position: relative;
+  top: .35em;
+}
+.usercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.useredandskills {
+  width: 50%;
+  margin-left: 8em;
+}
