@@ -9,14 +9,14 @@
 <div class="container">
   <h2>User Directory</h2>
 <ul>
-  {{#users}}
+  {{#id}}
     <li>
-      <img src="{{avatar}}">
-      <a href="/user/{{name}}"><h3>{{name}}</h3></a>
+      <img src="{{imageurl}}">
+      <a href="/user/{{username}}"><h3>{{username}}</h3></a>
       {{#job}}<p>{{job}}, {{company}} </p>{{/job}}
       {{^job}}<p class = "nojob">Available for hire</p> {{/job}}
     </li>
-  {{/users}}
+  {{/id}}
 </ul>
 </div>
   </body>
