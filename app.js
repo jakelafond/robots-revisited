@@ -29,6 +29,7 @@ const database = pgPromise({ database: 'robots' });
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(expressValidator());
 app.engine('mustache', mustacheExpress());
 app.set('views', './views');
 app.set('view engine', 'mustache');
@@ -100,8 +101,8 @@ app.post('/newuser', (req, res) => {
 
 app.delete('/user/:id', (request, response) => {
   const id = request.params.id;
-  database.one(`DELETE FROM "robots" WHERE id = $1`, [id]).then(robot => {
-    response.redirect('/index');
+  database.none(`DELETE FROM "robots" WHERE id = $1`, [id]).then(() => {
+    res.redirect('/');
   });
 });
 
