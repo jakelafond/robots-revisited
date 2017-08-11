@@ -25,6 +25,10 @@ h3 {
   color: rgb(41, 90, 236);
   font-weight: 700;
 }
+.newuserform {
+  display: block;
+  background-color: red;
+}
 .nojob {
   color: red;
 }
@@ -68,4 +72,14 @@ h3 {
 .useredandskills {
   width: 50%;
   margin-left: 8em;
+}
+.errors {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.fullwidth {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }

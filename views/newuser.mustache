@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New User</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+  <h2>New User Form</h2>
+  <div class="formcontainer">
+    <form class="newuserform" action="/newuser" method="post">
+      <div class="">
+        <input type="text" name="username" value="" placeholder="Username">
+        <input type="text" name="email" value="" placeholder="Email">
+        <input type="text" name="imageurl" value="" placeholder="Avatar URL">
+      </div>
+      <div class="">
+        <input type="text" name="street_number" value="" placeholder="Street Number">
+        <input type="text" name="address" value="" placeholder="Address">
+        <input type="text" name="city" value="" placeholder="City">
+        <input type="text" name="state" value="" placeholder="State">
+        <input type="text" name="postal_code" value="" placeholder="Postal Code">
+      </div>
+      <div class="">
+        <input type="text" name="university" value="" placeholder="University">
+        <input type="text" name="job" value="" placeholder="Job">
+        <input type="text" name="company" value="" placeholder="Company">
+      </div>
+      <div class="">
+        <input type="text" name="year_built" value="" placeholder="Year Built">
+        <input type="date" name="next_service_date" value="" placeholder="Next Service Date">
+        <select class="" name="is_active">
+          <option value="">Is Active?</option>
+          <option value="Y">Active</option>
+          <option value="N">Not Active</option>
+        </select>
+      </div>
+      <button type="submit" name="button">Create User</button>
+    </form>
+    {{#errors}}
+    <p class='errors'>{{msg}}</p>
+    {{/errors}}
+  </div>
+  </body>
+</html>

@@ -8,10 +8,10 @@
   <body>
     <div class="usercontainer">
       <div class="picture">
-      <img src="{{avatar}}" class = "userimg">
+      <img src="{{imageurl}}" class = "userimg">
       </div>
       <div class="userinfo">
-        <h3 class = "username">{{name}}</h3>
+        <h3 class = "username">{{username}}</h3>
         {{#address.city}}<span>{{address.city}}, {{address.country}} |</span>{{/address.city}}
         {{^address.city}}{{/address.city}}
         {{#job}}<span> {{job}}, {{company}}</span>{{/job}}
@@ -26,6 +26,12 @@
           {{#skills}}<li class = "userskills">{{.}}</li>{{/skills}}
         </ul>
       </div>
+      <div class="fullwidth">
+        {{#id}}
+        <button type="button" name="delete" id="delete" data-id="{{id}}" onclick="deleteThis()">Delete</button>
+        {{/id}}
+      </div>
     </div>
+    <script type="text/javascript" src="/main.js"></script>
   </body>
 </html>

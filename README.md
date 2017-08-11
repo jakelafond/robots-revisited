@@ -7,13 +7,13 @@ Complete at least Level 1 but keep pushing yourself to try as much of these leve
 
 ## Level 1  
 
-Make a duplicate of your robots project
+<!-- Make a duplicate of your robots project
 Edit your main server javacript (server.js, index.js, app.js, etc.)
 After your require statements and before your main code, place a comment showing your CREATE TABLE statement.
 Change your code that displays the list of robots to retrieve this from your robots table instead of the built in data.
-Change your code that displays a single robot to retrieve the robot, by ID, from the robots table
-Add code to handle the case where the user request a robot ID that doesn't exist. It should show the user a nice message instead of a SQL or node error.
-Add code to show a form to input details of a new robot
+Change your code that displays a single robot to retrieve the robot, by ID, from the robots table -->
+<!-- Add code to handle the case where the user request a robot ID that doesn't exist. It should show the user a nice message instead of a SQL or node error. -->
+<!-- Add code to show a form to input details of a new robot -->
 Add code to handle the submit of that form, adding a new robot to the database.
 Validate any fields that you feel need validation
 Not empty, length, type (number, etc.)
